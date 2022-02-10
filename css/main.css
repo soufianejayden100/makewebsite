@@ -54,8 +54,18 @@ body{
 /* header */
 #header{
     background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+    background: url(../images/about_us.jpg) top/cover no-repeat;
+    background-image:url('../images/offer_img.jpg') top/cover no-repeat;
+    animation: slider 9s infinite linear ;
+
 }
-.carousel-inner h1{
+@keyframes slider {
+     35%{ background-image:url('../images/about_us.jpg');}
+    35%{ background-image:url('../images/offer_img.jpg');}
+ 
+
+}
+ .carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font);
 }
